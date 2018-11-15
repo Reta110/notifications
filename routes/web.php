@@ -25,7 +25,7 @@ Route::get('/', function () {
 //DOING THE BROADCASTING
 Route::get('/alert', function () {
 
-	return view('welcome');
+	return view('eventListener');
 });
 
 Route::get('/trigger', function () {

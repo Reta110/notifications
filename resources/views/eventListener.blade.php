@@ -65,11 +65,13 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+        <div id="app">
+            <div class="flex-center position-ref full-height">
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Event page
+                <div class="content" >
+                    <div class="title m-b-md">
+                        Event page
+                    </div>
                 </div>
             </div>
         </div>

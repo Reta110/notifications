@@ -13922,7 +13922,12 @@ Vue.component('example-component', __webpack_require__(41));
  */
 
 var app = new Vue({
-  el: '#app'
+  el: '#app',
+  created: function created() {
+    Echo.channel('channelDemoEvent').listen('eventTrigger', function (e) {
+      alert('El evento ha sido ejecutdao');
+    });
+  }
 });
 
 /***/ }),
