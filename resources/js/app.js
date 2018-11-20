@@ -35,8 +35,8 @@ const app = new Vue({
     el: '#app',
     created(){
     	Echo.channel('channelDemoEvent')
-    		.listen('eventTrigger', (e)  => {
-    				alert('El evento ha sido ejecutdao');
-    		});
+			.listen('eventTrigger', (e)  => {
+					alert('El evento ha sido ejecutdaaaao' + e + "aqui1");
+			});
     }
 });

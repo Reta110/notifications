@@ -2,7 +2,7 @@
 
 use App\User;
 use App\Notifications\TaskCompleted;
-use App\Events\eventTrigger;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,7 +17,7 @@ use App\Events\eventTrigger;
 //DOING THE EVENT LISTENER
 Route::get('/', function () {
 
-	User::find(1)->notify(new TaskCompleted);
+	//User::find(1)->notify(new TaskCompleted);
 
 	return view('welcome');
 });
@@ -30,9 +30,10 @@ Route::get('/alert', function () {
 
 Route::get('/trigger', function () {
 
-	event(new eventTrigger());
+
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+

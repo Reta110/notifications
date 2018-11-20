@@ -26,6 +26,6 @@ class popUpBox
      */
     public function handle(eventTrigger $event)
     {
-        //
+        // dd($event);
     }
 }

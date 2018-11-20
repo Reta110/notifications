@@ -13925,7 +13925,7 @@ var app = new Vue({
   el: '#app',
   created: function created() {
     Echo.channel('channelDemoEvent').listen('eventTrigger', function (e) {
-      alert('El evento ha sido ejecutdao');
+      alert('El evento ha sido ejecutdaaaao' + e + "aqui1");
     });
   }
 });

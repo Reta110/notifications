@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Events\eventTrigger;
 
 class HomeController extends Controller
 {
@@ -23,6 +24,14 @@ class HomeController extends Controller
      */
     public function index()
     {
+
+        //$data = ["name" => "Rafael", "rut" => "25936215-6"]; 
+        //
+        
+        $user = auth()->user();
+    
+        event(new eventTrigger($user));
+
         return view('home');
     }
 }
